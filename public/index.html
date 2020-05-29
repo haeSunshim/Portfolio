@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      a:link {
+        color: #f8f8f8;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #f8f8f8;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #b787ca;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: rgb(103, 255, 255);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Haesun Shim</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span>Haesun Shim </span></h1>
+      <div class="wrapper animated fadeInUp">
+        <div class="company-info">
+          <h3>UNSW Computer Science Student</h3>
+          <ul>
+            <li>
+              <i class="fa fa-envelope" style="color: #8d6ffa;"></i>
+
+              h.shim@student.unsw.edu.au
+            </li>
+
+            <li>
+              <i class="fa fa-linkedin-square" style="color: #8d6ffa;"></i>
+              <a href="https://www.linkedin.com/in/haesun-shim-948642193/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-github" style="color: #8d6ffa;"></i>
+              <a href="https://github.com/haeSunshim">GitHub</a>
+            </li>
+            <li>
+              <i class="fa fa-instagram" style="color: #8d6ffa;"></i>
+              <a href="https://www.instagram.com/and_drawing_acc/">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Contact Me 📨</h3>
+          <div class="alert">Your message has been sent</div>
+          <form id="contactForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone" />
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" id="message" rows="5"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
